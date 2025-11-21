@@ -13,7 +13,7 @@ export class Summerization {
   constructor(private http: HttpClient) {}
 
   summarizeContent(content: String): Observable<any> {
-    return this.http.post(`${this.apiUrl}`, { content });
+    return this.http.post(`${this.apiUrl}/summarize`, { content });
   }
   
 }
