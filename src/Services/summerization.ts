@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class Summerization {
   
-  private apiUrl = 'http://localhost:3000/summarize';
+  //private apiUrl = 'http://localhost:3000/summarize';
+  private apiUrl = 'https://summerization-backend-genai-2.onrender.com';
 
   constructor(private http: HttpClient) {}
 
